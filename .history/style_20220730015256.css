@@ -1,0 +1,129 @@
+.bg-photo .container {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
+    float: none;
+    clear: both;
+}
+
+.bg-photo img {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.bg-photo .cat-btn {
+    -webkit-transition: all .2s ease 0s;
+    -o-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -ms-webkit-radius: 20px;
+    zoom: 1;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    cursor: pointer;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    overflow: inherit;
+    margin-bottom: 15px;
+    border: 0;
+    padding: 0 20px;
+}
+
+.bg-photo .cat-btn.active {
+    color: #484848 !important;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+    box-shadow: 0 2px 4px #00000014;
+}
+
+.bg-photo .cat-btn.active::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 8px);
+    width: 0;
+    height: 0;
+    border-top: solid 8px #fff;
+    border-left: solid 8px #ff000000;
+    border-right: solid 8px #dc000000;
+    bottom: -6px;
+}
+
+.bg-photo .kat-box {
+    display: flex;
+    justify-content: center;
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-photo .center-d {
+    display: flex;
+    padding: 0 81px;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 10px !important;
+}
+
+.bg-photo .swiper-slide.swiper-slide-visible {
+    border: 2px solid rgba(238, 238, 238, 0);
+    border-radius: 9px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.bg-photo .swiper-slide-thumb-active {
+    border-color: white !important;
+}
+
+.bg-photo .swiper-button-next,
+.bg-photo .swiper-button-prev {
+    width: 56px;
+    height: 36px;
+    border: 1px solid #fff;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.bg-photo .swiper-button-next.swiper-button-disabled,
+.bg-photo .swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+}
+
+.bg-photo .swiper-button-next:after,
+.bg-photo .swiper-rtl .swiper-button-prev:after {
+    content: url(right.svg);
+    line-height: 0;
+}
+
+.bg-photo .swiper-rtl .swiper-button-next:after,
+.bg-photo .swiper-button-prev:after {
+    content: url(left.svg);
+    line-height: 0;
+}
+
+.bg-photo {
+    padding: 40px 0;
+    transition: all .5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
